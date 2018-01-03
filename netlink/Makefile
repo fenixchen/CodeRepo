@@ -6,5 +6,5 @@ clean:
 	make -C user clean
 test:all
 	-@sudo rmmod netlinkKernel
-	insmod kernel/netlinkKernel.ko
+	sudo insmod kernel/netlinkKernel.ko
 	sudo user/netlinkUser
